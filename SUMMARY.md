@@ -1,8 +1,15 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Ember Atlas Introduction](README.md)
+* [Contributing](contributing.md)
 
-## Coming from another ecosystem?
+## Learning
 
-* [\[WIP\] Ember for React Developers](coming-from-another-ecosystem/wip-ember-for-react-developers.md)
+* [Coming From Another Ecosystem?](learning/coming-from-another-ecosystem/README.md)
+  * [Ember For React Developers](learning/coming-from-another-ecosystem/ember-for-react-developers.md)
+* [External Resources](learning/external-resources.md)
+
+## Upgrade Guides
+
+* [Octane Upgrade Guides](upgrade-guides/octane-upgrade-guides.md)
 

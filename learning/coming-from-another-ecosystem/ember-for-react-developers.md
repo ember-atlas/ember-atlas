@@ -1,21 +1,23 @@
 ---
 description: >-
-  React is the most popular javascript library for helping build single page
+  React is the most popular JavaScript library for helping build single page
   apps. Here is a quick look at how all of the concepts from from React
   translate to Ember.
 ---
 
-# \[WIP\] Ember for React Developers
+# Ember For React Developers
+
+> This guide is currently a work in progress. If you'd like to help out, check out the [Contributing guide](../../contributing.md) to get started!
 
 ## Introduction
 
 Both React and Ember conceptually can provide the solutions to the same problems. React has historically only been the component layer of applications, but that is changing as React evolves, and gradually adds more features that aim to make developing applications with react more pleasant. Ember offers a bit more out of the box, and aims to have a solution or pattern for most situations -- with additional tooling, conventions, architectural patterns, the goal is to abstract away the menial differences between apps and reduce friction when switching projects.
 
-![React is only Components](../.gitbook/assets/image%20%281%29.png)
+![React is only Components](../../.gitbook/assets/image%20%281%29.png)
 
 React is _mostly_ components. Interactions with external services such as [Redux](https://redux.js.org/), [GraphQL](https://graphql.org/) or [Orbit.js](https://orbitjs.com/) happen through components backed by a [_Context_](https://reactjs.org/docs/context.html) __which we'll dive into in a bit.
 
-![Ember connects to data via Services](../.gitbook/assets/image%20%282%29.png)
+![Ember connects to data via Services](../../.gitbook/assets/image%20%282%29.png)
 
 Ember has architectural patterns for dealing with specific interactions. Third party services are always interfaced with an Ember [_Service_](https://guides.emberjs.com/release/applications/services/). Services are used for a lot more than just 3rd party library integrations. A Service  is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern); it lives for the duration of the application.  Ember has object types other than services 
 
@@ -408,19 +410,25 @@ Redux is react-independent and can work with Ember via a connection library, jus
 
 ## Project Layout
 
-
+> This section hasn't been written yet. If you'd like to write it, check out the [Contributing guide](../../contributing.md) to get started!
 
 ## Styles
 
 ### CSS-in-JS
 
+> This section hasn't been written yet. If you'd like to write it, check out the [Contributing guide](../../contributing.md) to get started!
+
 ## API / Data Management
+
+> This section hasn't been written yet. If you'd like to write it, check out the [Contributing guide](../../contributing.md) to get started!
 
 ## Common Questions \(with answers\)
 
 ### Should components load or interact with data directly?
 
-yes. TODO: explain
+> This section hasn't been written yet. If you'd like to write it, check out the [Contributing guide](../../contributing.md) to get started!
+>
+> Notes: Yes. TODO: explain.
 
 ### Does Ember have an equivalent of PropTypes?
 
@@ -430,9 +438,9 @@ Sort of. There is an addon called [ember-prop-types](https://github.com/ciena-bl
 
 [Dependency Injection](https://guides.emberjs.com/release/applications/dependency-injection/)
 
-### How do I mock an import?
+### How do I mock an import
 
-
+> This section hasn't been written yet. If you'd like to write it, check out the [Contributing guide](../../contributing.md) to get started!
 
 ### Why can't I use Jest for testing?
 
@@ -512,7 +520,7 @@ More information can be found at [https://jsonapi.org](https://jsonapi.org).
 
 While using `{ json:api }` provides the most seamless integration with ember-data, ember-data provides a translation layer for converting _any_ resource-based API to models. 
 
-![ Diagram of data-flow between ember-data&apos;s cache store and a remote API](../.gitbook/assets/emberconf-2019-2%20%281%29.png)
+![ Diagram of data-flow between ember-data&apos;s cache store and a remote API](../../.gitbook/assets/emberconf-2019-2%20%281%29.png)
 
 Why would you want to use ember-data if your API doesn't immediately work by default with it? ember-data gives you an abstraction for querying, updating, deleting, and managing cache for your API resources. 
 
