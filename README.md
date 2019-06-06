@@ -1,4 +1,4 @@
-# Ember Atlas Introduction
+# Introduction
 
 Hello, and welcome to the Ember Atlas, your one stop shop for navigating the world of Ember.js! This GitBook is a community driven project dedicated to documenting all things Ember and providing a place share knowledge. It is meant to work like a curated wiki, gathering as much information as possible, while simultaneously ensuring that information is easy to browse and has an overall consistent flow.
 
@@ -15,9 +15,10 @@ If you're getting started:
 * The [Official Ember Guides](https://guides.emberjs.com/release/) are the best place to start for first time Ember users who want to learn the basics.
 * If you're coming from another ecosystem, like React or Vue, the [Coming From Another Ecosystem](learning/coming-from-another-ecosystem/) section is dedicated to guides that introduce Ember from that perspective.
 
-For more advanced users, and further learning:
+If you already know the basics, you can learn more through:
 
-* The [Ember API Documentation](https://api.emberjs.com/)
+* The [Ember API Documentation](https://api.emberjs.com/), which is in depth, but generally meant to be used as a reference.
+* The Atlas [Cookbook](learning/cookbook.md), which is for in-depth guides and recipes. 
 * You can visit the [External Resources](learning/external-resources.md) page to find a bunch of external guides and resources that can use to learn more, including tutorials, courses, and blog posts!
 
 ### Upgrading
