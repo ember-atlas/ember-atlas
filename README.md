@@ -23,7 +23,7 @@ If you already know the basics, you can learn more through:
 
 ### Upgrading
 
-* If you're upgrading your app to Ember Octane, check out the [Ember Octane Upgrade Guides](upgrade-guides/octane-upgrade-guides.md).
+* If you're upgrading your app to Ember Octane, check out the [Ember Octane Upgrade Guides](upgrade-guides/octane-upgrade-guides/).
 
 ## Why a "Wiki"?
 

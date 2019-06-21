@@ -12,5 +12,10 @@
 
 ## Upgrade Guides
 
-* [Octane Upgrade Guides](upgrade-guides/octane-upgrade-guides.md)
+* [Octane Upgrade Guide](upgrade-guides/octane-upgrade-guides/README.md)
+  * [Updating Framework Classes](upgrade-guides/octane-upgrade-guides/updating-framework-classes.md)
+  * [Updating Utility Classes](upgrade-guides/octane-upgrade-guides/updating-utility-classes.md)
+  * [Updating Components](upgrade-guides/octane-upgrade-guides/updating-components.md)
+  * [Converting to Tracked Properties](upgrade-guides/octane-upgrade-guides/converting-to-tracked-properties.md)
+  * [Removing Other Classic APIs](upgrade-guides/octane-upgrade-guides/removing-other-classic-apis.md)
 
