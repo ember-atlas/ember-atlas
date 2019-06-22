@@ -29,6 +29,26 @@ One other major difference between React and Ember components, is that React com
 
 [Ember Guides on Components](https://guides.emberjs.com/release/components/defining-a-component/)
 
+### Templates and JSX
+
+Templates in Ember are not _Just JavaScript_ like JSX is. Ember templates are _just_ HTML, or rather a superset of HTML. One of the benefits of JSX is that by leveraging JavaScript, it's very clear where variables and event handlers come from. In larger components being able to "Go-to definition" by either hotkey or click combination to find the definition of the property or function is essential to learning the flow of data. An IDE or editor's support of this kind of discovery comes natural with _just_ JavaScript support. 
+
+With Ember, since there are a whole _framework_ of features baked in, the IDE or editor needs a couple additional plugins in order to achieve the same experience.  
+
+* [Ember Language Server](https://marketplace.visualstudio.com/items?itemName=lifeart.vscode-ember-unstable)
+* [Handlebars](https://marketplace.visualstudio.com/items?itemName=andrejunges.Handlebars) \(subset of ember's templating language\)
+
+Aside from editor-feature differences, there are a number of technical reasons that Ember uses templates over JavaScript. 
+
+* Templates are statically analyzable and can be transformed / modified at build time.
+* Templates are compiled down to a binary format that makes the compiled size much smaller than gzipped and minified JavaScript. The binary format also allows for the user's browser to read and evaluate the template much faster than JavaScript as JavaScript needs to be parsed and compiled by the browser before it can be evaluated.  
+* Templates allow you to use all the features of the web. 
+  * Templates are a superset of HTML
+  * `...attributes` allow you to separate html attributes from component arguments.
+  * all attributes you'd find in HTML or SVG documentation _just work_. No need to try to translate anything in your head before you write it.
+
+For more information on the benefits of the templating language that ember uses, there is this talk that Tom Dale gave at [ReactiveConf 2017: Secrets of the Glimmer VM](https://www.youtube.com/watch?v=nXCSloXZ-wc).
+
 ### Component Patterns
 
 #### Presentational or "Stateless" Component
@@ -300,6 +320,11 @@ Contextual components are useful when you have a set of components that need to 
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+Related Ember Documentation:
+
+* [`hash` helper](https://api.emberjs.com/ember/3.10/classes/Ember.Templates.helpers/methods/hash?anchor=hash)
+* [`yield` : "Wrapping Content in a Component"](https://guides.emberjs.com/release/components/wrapping-content-in-a-component/)
+
 This can somewhat be faked in React's component system, as the components are nothing more than module exports. We can tack on the related components as static properties to the main export of a component.
 
 {% code-tabs %}
@@ -316,27 +341,7 @@ export default Card;
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Though, even with assigning sub-components to the default export, a user must rely on documentation to know about how these sub-components are accessed. In order to achieve the best sub-component suggestion you'd have to user [render-props.](https://reactjs.org/docs/render-props.html) Render props are a technique of passing a prop to a component and invoking that as a 
-
-### Templates and JSX
-
-Templates in Ember are not _Just JavaScript_ like JSX is. Ember templates are _just_ HTML, or rather a superset of HTML. One of the benefits of JSX is that by leveraging JavaScript, it's very clear where variables and event handlers come from. In larger components being able to "Go-to definition" by either hotkey or click combination to find the definition of the property or function is essential to learning the flow of data. An IDE or editor's support of this kind of discovery comes natural with _just_ JavaScript support. 
-
-With Ember, since there are a whole _framework_ of features baked in, the IDE or editor needs a couple additional plugins in order to achieve the same experience.  
-
-* [Ember Language Server](https://marketplace.visualstudio.com/items?itemName=lifeart.vscode-ember-unstable)
-* [Handlebars](https://marketplace.visualstudio.com/items?itemName=andrejunges.Handlebars) \(subset of ember's templating language\)
-
-Aside from editor-feature differences, there are a number of technical reasons that Ember uses templates over JavaScript. 
-
-* Templates are statically analyzable and can be transformed / modified at build time.
-* Templates are compiled down to a binary format that makes the compiled size much smaller than gzipped and minified JavaScript. The binary format also allows for the user's browser to read and evaluate the template much faster than JavaScript as JavaScript needs to be parsed and compiled by the browser before it can be evaluated.  
-* Templates allow you to use all the features of the web. 
-  * Templates are a superset of HTML
-  * `...attributes` allow you to separate html attributes from component arguments.
-  * all attributes you'd find in HTML or SVG documentation _just work_. No need to try to translate anything in your head before you write it.
-
-For more information on the benefits of the templating language that ember uses, there is this talk that Tom Dale gave at [ReactiveConf 2017: Secrets of the Glimmer VM](https://www.youtube.com/watch?v=nXCSloXZ-wc).
+Though, even with assigning sub-components to the default export, a user must rely on documentation to know about how these sub-components are accessed. In order to achieve the best sub-component suggestion you'd have to user [render-props.](https://reactjs.org/docs/render-props.html) 
 
 ## Application State Management
 
