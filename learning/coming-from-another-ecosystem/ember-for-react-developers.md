@@ -147,7 +147,8 @@ This uses the [render-props](https://reactjs.org/docs/render-props.html) pattern
 {% code-tabs %}
 {% code-tabs-item title="modal-state/component.js" %}
 ```javascript
-import Component from '@glimmer/component';
+
+import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 
@@ -299,6 +300,10 @@ Contextual components are useful when you have a set of components that need to 
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+Related Ember Documentation:
+ - [hash helper](https://api.emberjs.com/ember/3.10/classes/Ember.Templates.helpers/methods/hash?anchor=hash)
+ - [yield _"Wrapping Content in a Component"](https://guides.emberjs.com/release/components/wrapping-content-in-a-component/)
 
 This can somewhat be faked in React's component system, as the components are nothing more than module exports. We can tack on the related components as static properties to the main export of a component.
 
